@@ -7,6 +7,7 @@ import { DefaultNodeModel } from "storm-react-diagrams";
 import { SceneNodeModel } from "../Models/SceneNodeModel";
 import { HotspotNodeModel } from "../Models/HotspotNodeModel";
 import { JsonNodeModel } from "../Models/JsonNodeModel";
+import { SceneHotspotNodeModel } from "../Models/SceneHotspotNodeModel";
 
 import { CustomDiagramWidget } from "./CustomDiagramWidget";
 
@@ -21,6 +22,7 @@ export class BodyWidget extends React.Component {
                         <TrayItemWidget model={{ type: "Scene" }} name="Scene Node" color="rgb(255,255,255)" />
                         <TrayItemWidget model={{ type: "Hotspot" }} name="Hotspot Node" color="rgb(180,180,180)" />
                         <TrayItemWidget model={{ type: "JsonNode" }} name="Json Node" color="rgb(180,100,100)" />
+                        <TrayItemWidget model={{ type: "ScHotspot" }} name="SceneHotspot Node" color="rgb(80,80,200)" />
                     </TrayWidget>
                     <div
                         className="diagram-layer"
@@ -49,6 +51,11 @@ export class BodyWidget extends React.Component {
                                     break;
                                 case "JsonNode":
                                     node = new JsonNodeModel();
+                                    node.addOutPort("Out");
+                                    node.addInPort("In");
+                                    break;
+                                case "ScHotspot":
+                                    node = new SceneHotspotNodeModel();
                                     node.addOutPort("Out");
                                     node.addInPort("In");
                                     break;
