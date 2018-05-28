@@ -20,7 +20,7 @@ export class BodyWidget extends React.Component {
                         <TrayItemWidget model={{ type: "out" }} name="Out Node" color="rgb(0,192,255)" />
                         <TrayItemWidget model={{ type: "Scene" }} name="Scene Node" color="rgb(255,255,255)" />
                         <TrayItemWidget model={{ type: "Hotspot" }} name="Hotspot Node" color="rgb(180,180,180)" />
-                        <TrayItemWidget model={{ type: "Json" }} name="Json Node" color="rgb(180,100,100)" />
+                        <TrayItemWidget model={{ type: "JsonNode" }} name="Json Node" color="rgb(180,100,100)" />
                     </TrayWidget>
                     <div
                         className="diagram-layer"
@@ -47,7 +47,7 @@ export class BodyWidget extends React.Component {
                                     node.addOutPort("Out");
                                     node.addInPort("In");
                                     break;
-                                case "Json":
+                                case "JsonNode":
                                     node = new JsonNodeModel();
                                     node.addOutPort("Out");
                                     node.addInPort("In");

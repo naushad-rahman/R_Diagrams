@@ -5,7 +5,7 @@ import * as React from "react";
 
 export class JsonNodeFactory extends SRD.AbstractNodeFactory {
     constructor() {
-        super("Json");
+        super("JsonNode");
     }
 
     generateReactWidget(diagramEngine, node) {

@@ -18,7 +18,7 @@ export class SceneNodeWidget extends React.Component{
     }
 
     render(){
-        return (<div className="sc-div" style={{ backgroundColor: "#FFF" }}>
+        return (<div className="widget-div" style={{ backgroundColor: "#FFF" }}>
                     <div className="widget-label">Scene :</div>
                     <div className="widget-content">
                         <div>
@@ -38,11 +38,11 @@ export class SceneNodeWidget extends React.Component{
                             <input onChange={this.props.node.updateRotation} type="checkbox"/>
                         </div>
                     </div>
-                    <div>
-                        <div>
+                    <div className="widget-port">
+                        <div className="left-port">
                             {_.map(this.props.node.getInPorts(), this.generatePort.bind(this))}
                         </div>
-                        <div>
+                        <div className="right-port">
                             {_.map(this.props.node.getOutPorts(), this.generatePort.bind(this))}
                         </div>
                     </div>

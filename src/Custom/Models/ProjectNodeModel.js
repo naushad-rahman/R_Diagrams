@@ -1,24 +1,18 @@
 import { NodeModel, DefaultPortModel, Toolkit } from "storm-react-diagrams";
 import * as _ from "lodash";
 
-export class JsonNodeModel extends NodeModel {
+export class ProjectNodeModel extends NodeModel {
     constructor() {
-        super("JsonNode");
-        this.Json = "";
+        super("Project");
+        this.Config = "";
     }
 
-    updateJson = (e) => {
+    updateConfig = (e) => {
         let jObj = JSON.parse(e.target.value);
         let pretty = JSON.stringify(jObj);
-        this.Json = pretty;
-        console.log(this.Json);
+        this.Config = pretty;
+        console.log(this.Config);
     };
-
-    serialize() {
-        return _.merge(super.serialize(), {
-            Json: this.Json,
-        });
-    }
 
     addInPort(label) {
         return this.addPort(new DefaultPortModel(true, Toolkit.UID(), label));

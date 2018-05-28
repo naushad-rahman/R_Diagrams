@@ -12,9 +12,12 @@ body {
   background-size: 50px 50px;
 }
 
-.hs-div{
+.widget-div{
   font-size: 0.8rem;
-  width: 12rem;
+  button,textarea{
+    display: block;
+    margin: 0 auto;
+  }
   .widget-label{
     text-align: center;
     background-color: black;
@@ -31,15 +34,29 @@ body {
       max-width: 50%;
     }
   }
-}
-
-.sc-div{
-  font-size: 0.8rem;
-  .widget-label{
-    text-align: center;
-    background-color: black;
+  .widget-port{
     color: white;
-    padding: 0.3rem;
-    font-weight: bold;
+    .left-port{
+      background-color: black !important;
+      width: 50%;
+      float: left;
+      .srd-port{
+        background-color: #CCC;
+        &:hover{
+          background-color: #C0FF00;
+        }
+      }
+    }
+    .right-port{
+      background-color: black !important;
+      width: 50%;
+      float: left;
+      .srd-port{
+        background-color: #CCC;
+        &:hover{
+          background-color: #C0FF00;
+        }
+      }
+    }
   }
 }

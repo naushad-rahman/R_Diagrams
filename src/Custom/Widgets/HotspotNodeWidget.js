@@ -8,7 +8,7 @@ export class HotspotNodeWidget extends React.Component {
         node: PropTypes.any,
     };
 
-    constructor(props,) {
+    constructor(props) {
         super(props);
         console.log(props);
     }
@@ -18,7 +18,7 @@ export class HotspotNodeWidget extends React.Component {
     }
 
     render() {
-        return (<div className="hs-div" style={{ backgroundColor: "#AAA" }}>
+        return (<div className="widget-div" style={{ backgroundColor: "#AAA" }}>
                     <div className="widget-label">Hotspot :</div>
                     <div className="widget-content">
                         <div>
@@ -46,11 +46,11 @@ export class HotspotNodeWidget extends React.Component {
                             <input onChange={this.props.node.updateDormant} type="checkbox"/>
                         </div>
                     </div>
-                    <div>
-                        <div>
+                    <div className="widget-port">
+                        <div className="left-port">
                             {_.map(this.props.node.getInPorts(), this.generatePort.bind(this))}
                         </div>
-                        <div>
+                        <div className="right-port">
                             {_.map(this.props.node.getOutPorts(), this.generatePort.bind(this))}
                         </div>
                     </div>

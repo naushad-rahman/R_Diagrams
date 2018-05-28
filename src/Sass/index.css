@@ -10,27 +10,38 @@ body {
   background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05) 76%, transparent 77%, transparent);
   background-size: 50px 50px; }
 
-.hs-div {
-  font-size: 0.8rem;
-  width: 12rem; }
-  .hs-div .widget-label {
-    text-align: center;
-    background-color: black;
-    color: white;
-    padding: 0.3rem;
-    font-weight: bold; }
-  .hs-div .widget-content {
-    width: 100%; }
-    .hs-div .widget-content label {
-      max-width: 50%; }
-    .hs-div .widget-content input {
-      max-width: 50%; }
-
-.sc-div {
+.widget-div {
   font-size: 0.8rem; }
-  .sc-div .widget-label {
+  .widget-div button, .widget-div textarea {
+    display: block;
+    margin: 0 auto; }
+  .widget-div .widget-label {
     text-align: center;
     background-color: black;
     color: white;
     padding: 0.3rem;
     font-weight: bold; }
+  .widget-div .widget-content {
+    width: 100%; }
+    .widget-div .widget-content label {
+      max-width: 50%; }
+    .widget-div .widget-content input {
+      max-width: 50%; }
+  .widget-div .widget-port {
+    color: white; }
+    .widget-div .widget-port .left-port {
+      background-color: black !important;
+      width: 50%;
+      float: left; }
+      .widget-div .widget-port .left-port .srd-port {
+        background-color: #CCC; }
+        .widget-div .widget-port .left-port .srd-port:hover {
+          background-color: #C0FF00; }
+    .widget-div .widget-port .right-port {
+      background-color: black !important;
+      width: 50%;
+      float: left; }
+      .widget-div .widget-port .right-port .srd-port {
+        background-color: #CCC; }
+        .widget-div .widget-port .right-port .srd-port:hover {
+          background-color: #C0FF00; }
