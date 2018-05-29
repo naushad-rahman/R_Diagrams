@@ -1,4 +1,5 @@
 import { NodeModel, DefaultPortModel, Toolkit } from "storm-react-diagrams";
+import { NextPortModel } from "./NextPortModel";
 import * as _ from "lodash";
 
 export class SceneHotspotNodeModel extends NodeModel {
@@ -12,6 +13,9 @@ export class SceneHotspotNodeModel extends NodeModel {
     addOutPort(label) {
         return this.addPort(new DefaultPortModel(false, Toolkit.UID(), label));
     }
+    addNextPort(label) {
+        return this.addPort(new NextPortModel(true, Toolkit.UID(), label));
+    }
 
     getInPorts() {
         return _.filter(this.ports, portModel => {
@@ -20,7 +24,12 @@ export class SceneHotspotNodeModel extends NodeModel {
     }
     getOutPorts() {
         return _.filter(this.ports, portModel => {
-            return !portModel.in;
+            return (!portModel.in && !portModel.next);
+        });
+    }
+    getNextPorts() {
+        return _.filter(this.ports, portModel => {
+            return portModel.next;
         });
     }
 }

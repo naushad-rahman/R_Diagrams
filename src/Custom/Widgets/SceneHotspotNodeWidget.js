@@ -17,6 +17,10 @@ export class SceneHotspotNodeWidget extends React.Component {
         return <SRD.DefaultPortLabel model={port} key={port.id}/>;
     }
 
+    genHotspot() {
+        console.log("genHS",this.props.node);
+    }
+
     render() {
         return (<div className="widget-div" style={{backgroundColor:"#7b00ff"}}>
             <div className="widget-label">SC : </div>
@@ -27,8 +31,9 @@ export class SceneHotspotNodeWidget extends React.Component {
             <div>
                 <label>Default HS : </label>
                 <input type="text"/>
+                <div>{_.map(this.props.node.getNextPorts(), this.generatePort.bind(this))}</div>
             </div>
-            <button>+</button>
+            <button onClick={this.genHotspot.bind(this)}>+</button>
             <div className="widget-port">
                 <div className="left-port">
                     {_.map(this.props.node.getInPorts(), this.generatePort.bind(this))}

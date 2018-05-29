@@ -56,6 +56,7 @@ export class BodyWidget extends React.Component {
                                     break;
                                 case "ScHotspot":
                                     node = new SceneHotspotNodeModel();
+                                    node.addNextPort("Next");
                                     node.addOutPort("Out");
                                     node.addInPort("In");
                                     break;
