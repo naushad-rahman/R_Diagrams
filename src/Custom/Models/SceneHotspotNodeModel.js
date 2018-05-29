@@ -5,6 +5,20 @@ import * as _ from "lodash";
 export class SceneHotspotNodeModel extends NodeModel {
     constructor() {
         super("ScHotspot");
+        this.hotspot_ids = {};
+    }
+    removeHsId = (id) => {
+        this.hotspot_ids = _.omit(this.hotspot_ids,"hotspot_"+id);
+    };
+    updateHsId = (e,id) => {
+        console.log(e.target.value,id);
+        this.hotspot_ids["hotspot_"+id] = e.target.value;
+    };
+
+    serialize() {
+        return _.merge(super.serialize(), {
+            hotspot_ids: this.hotspot_ids
+        });
     }
 
     addInPort(label) {
