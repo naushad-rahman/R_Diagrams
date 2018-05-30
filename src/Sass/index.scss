@@ -1,7 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+// Variables
+$font-lato: "Lato", sans-serif;
+$black-1: #1A1A1A;
+$black-2: #333;
+$black-3: #555;
+$white: #FFF;
+$white-1: #EEE;
+*,* ::after, *::before {
+  box-sizing: border-box
+}
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  overflow: hidden;
+  font-family: $font-lato,sans-serif;
 }
 
 .srd-demo-canvas {
@@ -12,51 +24,121 @@ body {
   background-size: 50px 50px;
 }
 
-.widget-div{
-  font-size: 0.8rem;
-  button,textarea{
-    display: block;
-    margin: 0 auto;
+.widget-container {
+  width: 15rem;
+  .srd-port{
+    width: 12px;
+    height: 12px;
+    background-color: rgba(200,200,200,1);
   }
-  .widget-label{
-    text-align: center;
-    background-color: black;
-    color: white;
-    padding: 0.3rem;
-    font-weight: bold;
-  }
-  .widget-content{
+  .widget-header{
     width: 100%;
-    label{
-      max-width: 50%;
-    }
-    input{
-      max-width: 50%;
-    }
-  }
-  .widget-port{
-    color: white;
+    height: 24px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     .left-port{
-      background-color: black !important;
-      width: 50%;
       float: left;
+      width: 20%;
       .srd-port{
-        background-color: #CCC;
-        &:hover{
-          background-color: #C0FF00;
-        }
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
       }
     }
-    .right-port{
-      background-color: black !important;
-      width: 50%;
+    .scene{
       float: left;
+      text-align: center;
+      width: 60%;
+    }
+    .right-port{
+      float: right;
+      width: 20%;
       .srd-port{
-        background-color: #CCC;
-        &:hover{
-          background-color: #C0FF00;
-        }
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+    }
+  }
+  .widget-content{
+    .widget-id{
+      width: 100%;
+      height: 24px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      .widget-id-label{
+        margin-left: 10%;
+        margin-right: 2%;
+        min-width: 28%;
+        max-width: 28%;
+        float: left;
+        text-align: right;
+      }
+      .widget-id-input{
+        margin-right: 20%;
+        min-width: 40%;
+        max-width: 40%;
+        float: left;
+      }
+    }
+    .widget-next{
+      width: 100%;
+      height: 24px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      .srd-port{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+      .widget-next-label{
+        margin-left: 10%;
+        margin-right: 2%;
+        min-width: 28%;
+        max-width: 28%;
+        float: left;
+        text-align: right;
+      }
+      .widget-next-input{
+        min-width: 40%;
+        max-width: 40%;
+        float: left;
+      }
+    }
+    .widget-hotspot{
+      width: 100%;
+      height: 24px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      .srd-port{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+      .widget-hotspot-del{
+        float: left;
+        margin-left: 1%;
+      }
+      .widget-hotspot-label{
+        margin-right: 2%;
+        min-width: 28%;
+        max-width: 28%;
+        float: left;
+        text-align: right;
+      }
+      .widget-hotspot-input{
+        min-width: 41%;
+        max-width: 41%;
+        float: left;
+      }
+    }
+    .widget-add{
+      display: block;
+      margin: 0 auto;
+      width: 10%;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      button{
+        text-align: center;
       }
     }
   }
 }
+
+

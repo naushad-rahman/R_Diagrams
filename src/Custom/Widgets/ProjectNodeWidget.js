@@ -31,13 +31,13 @@ export class ProjectNodeWidget extends React.Component {
             <div className="widget-label">Project : </div>
             <div>
                 <label>Name : </label>
-                <input type="text"/>
+                <input onBlur={this.props.node.updateName} type="text"/>
             </div>
-            <button onClick={this.toggleTextArea.bind(this)}>Toggle</button>
             <div>
                 <label>Config : </label>
                 <textarea style={{display:"none"}} onBlur={this.props.node.updateConfig} ref={this.textRef} rows="3"/>
             </div>
+            <button onClick={this.toggleTextArea.bind(this)}>Toggle</button>
         </div>);
     }
 }

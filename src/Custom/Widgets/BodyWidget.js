@@ -12,11 +12,16 @@ import { SceneHotspotNodeModel } from "../Models/SceneHotspotNodeModel";
 import { CustomDiagramWidget } from "./CustomDiagramWidget";
 
 export class BodyWidget extends React.Component {
+    showDiagramJSON = (model) => {
+        console.log("MOD",model);
+    };
+
     render() {
         return (
             <div className="body">
                 <div className="content">
                     <TrayWidget>
+                        <button onClick={()=>{this.showDiagramJSON(this.props.app.getDiagramEngine().getDiagramModel())}}>Serialize</button>
                         <TrayItemWidget model={{ type: "in" }} name="In Node" color="rgb(192,255,0)" />
                         <TrayItemWidget model={{ type: "out" }} name="Out Node" color="rgb(0,192,255)" />
                         <TrayItemWidget model={{ type: "Scene" }} name="Scene Node" color="rgb(255,255,255)" />

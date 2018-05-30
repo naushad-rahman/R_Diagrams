@@ -28,7 +28,7 @@ export class SceneHotspotNodeWidget extends React.Component {
             hotspot_ids: newH
         });
         console.log("ADD",newH);
-        this.props.node.addNextPort("Next");
+        this.props.node.addNextPort("Nxt");
     };
 
     _removeHotspot = (hotspot, hsIndex) => {
@@ -42,36 +42,39 @@ export class SceneHotspotNodeWidget extends React.Component {
 
     _generateHotspots = ()=> {
         return this.state.hotspot_ids.map((hotspot,index)=> (
-            <div key={hotspot.hotspot_id}>
-                <label>HS {hotspot.hotspot_id} : </label>
-                <input onBlur={(e)=>{this.props.node.updateHsId(e,hotspot.hotspot_id)}} type="text"/>
-                <button onClick={()=>{this._removeHotspot(hotspot,index+1)}}>-</button>
+            <div className="widget-hotspot" key={hotspot.hotspot_id}>
+                <button className="widget-hotspot-del" onClick={()=>{this._removeHotspot(hotspot,index+1)}}>-</button>
+                <div className="widget-hotspot-label">HS {hotspot.hotspot_id} : </div>
+                <input className="widget-hotspot-input" onBlur={(e)=>{this.props.node.updateHsId(e,hotspot.hotspot_id)}} defaultValue={this.props.node.hotspot_ids["hotspot_"+hotspot.hotspot_id] || ""} type="text"/>
                 <div>{this.generatePort(this.props.node.getNextPorts()[index+1])}</div>
             </div>
         ));
     };
 
     render() {
-        return (<div className="widget-div" style={{backgroundColor:"#7b00ff"}}>
-            <div className="widget-label">SC : </div>
-            <div>
-                <label>ID : </label>
-                <input type="text"/>
-            </div>
-            <div>
-                <label>Default HS : </label>
-                <input type="text"/>
-                <div>{this.generatePort(this.props.node.getNextPorts()[0])}</div>
-            </div>
-            {this._generateHotspots()}
-            <button onClick={this._addElement}>+</button>
-            <div className="widget-port">
+        return (
+        <div className="widget-container" style={{backgroundColor:"#7b00ff"}}>
+            <div className="widget-header">
                 <div className="left-port">
                     {_.map(this.props.node.getInPorts(), this.generatePort.bind(this))}
                 </div>
+                <div className="scene">Scene</div>
                 <div className="right-port">
                     {_.map(this.props.node.getOutPorts(), this.generatePort.bind(this))}
                 </div>
+            </div>
+            <div className="widget-content">
+                <div className="widget-id">
+                    <div className="widget-id-label">Id : </div>
+                    <input className="widget-id-input" onBlur={this.props.node.updateId} defaultValue={this.props.node.scene_id} type="text"/>
+                </div>
+                <div className="widget-next">
+                    <div className="widget-next-label">Next Id : </div>
+                    <input className="widget-next-input" onBlur={this.updateNextId} defaultValue={this.props.node.next_scene_id} type="text"/>
+                    <div>{this.generatePort(this.props.node.getNextPorts()[0])}</div>
+                </div>
+                {this._generateHotspots()}
+                <div className="widget-add"><button onClick={this._addElement}>+</button></div>
             </div>
         </div>);
     }

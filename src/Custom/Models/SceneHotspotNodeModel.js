@@ -6,7 +6,18 @@ export class SceneHotspotNodeModel extends NodeModel {
     constructor() {
         super("ScHotspot");
         this.hotspot_ids = {};
+        this.scene_id = "";
+        this.next_scene_id = "";
     }
+
+    updateId = (e) => {
+        this.scene_id = e.target.value;
+        console.log("id",this.scene_id);
+    };
+    updateNextId = (e) => {
+        this.next_scene_id = e.target.value;
+        console.log("next id",this.next_scene_id);
+    };
     removeHsId = (id) => {
         this.hotspot_ids = _.omit(this.hotspot_ids,"hotspot_"+id);
     };
