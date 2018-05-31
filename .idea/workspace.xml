@@ -4,7 +4,6 @@
     <list default="true" id="4e1d4ce1-187b-4466-b556-8e9b45a3ebf0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Application.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Custom/Models/ProjectNodeModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Custom/Models/ProjectNodeModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Custom/Models/SceneHotspotNodeModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Custom/Models/SceneHotspotNodeModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Custom/Widgets/BodyWidget.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Custom/Widgets/BodyWidget.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Custom/Widgets/ProjectNodeWidget.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Custom/Widgets/ProjectNodeWidget.js" afterDir="false" />
@@ -27,8 +26,8 @@
       <file leaf-file-name="SceneHotspotNodeWidget.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Custom/Widgets/SceneHotspotNodeWidget.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
+            <state relative-caret-position="483">
+              <caret line="71" column="71" lean-forward="true" selection-start-line="71" selection-start-column="71" selection-end-line="71" selection-end-column="71" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -36,34 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Sass/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="42" column="37" lean-forward="true" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SceneHotspotNodeModel.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Custom/Models/SceneHotspotNodeModel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="25" column="57" lean-forward="true" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
-              <folding>
-                <element signature="e#0#76#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="329">
+              <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -97,12 +73,13 @@
         <option value="$PROJECT_DIR$/src/Custom/Widgets/JsonNodeWidget.js" />
         <option value="$PROJECT_DIR$/src/Custom/Factories/SceneHotspotNodeFactory.js" />
         <option value="$PROJECT_DIR$/src/Custom/Models/NextPortModel.js" />
-        <option value="$PROJECT_DIR$/src/Custom/Widgets/BodyWidget.js" />
         <option value="$PROJECT_DIR$/src/Custom/Models/ProjectNodeModel.js" />
-        <option value="$PROJECT_DIR$/src/Custom/Widgets/ProjectNodeWidget.js" />
-        <option value="$PROJECT_DIR$/src/Custom/Models/SceneHotspotNodeModel.js" />
         <option value="$PROJECT_DIR$/src/Application.js" />
+        <option value="$PROJECT_DIR$/src/Custom/Helper/jsonSkeleton.js" />
+        <option value="$PROJECT_DIR$/src/Custom/Models/SceneHotspotNodeModel.js" />
         <option value="$PROJECT_DIR$/src/Custom/Widgets/SceneHotspotNodeWidget.js" />
+        <option value="$PROJECT_DIR$/src/Custom/Widgets/BodyWidget.js" />
+        <option value="$PROJECT_DIR$/src/Custom/Widgets/ProjectNodeWidget.js" />
         <option value="$PROJECT_DIR$/src/Sass/index.scss" />
       </list>
     </option>
@@ -181,7 +158,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-diagrams" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
@@ -210,12 +187,13 @@
       <updated>1527493495193</updated>
       <workItem from="1527493497401" duration="20552000" />
       <workItem from="1527573539990" duration="26831000" />
-      <workItem from="1527662144363" duration="13885000" />
+      <workItem from="1527662144363" duration="13985000" />
+      <workItem from="1527750472056" duration="15837000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61268000" />
+    <option name="totallyTimeSpent" value="77205000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -225,8 +203,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24944155" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -246,19 +224,19 @@
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21156661" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21156661" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,6 +251,42 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Custom/Widgets/SceneHotspotNodeWidget.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1533">
+          <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sass/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="882">
+          <caret line="42" column="37" lean-forward="true" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Custom/Models/SceneHotspotNodeModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="25" column="57" lean-forward="true" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Custom/Widgets/BodyWidget.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -451,16 +465,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Custom/Widgets/ProjectNodeWidget.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-265">
-          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Sass/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -478,59 +482,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Custom/Widgets/BodyWidget.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="65" column="57" lean-forward="true" selection-start-line="65" selection-start-column="57" selection-end-line="65" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Custom/Models/SceneHotspotNodeModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" column="57" lean-forward="true" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Custom/Widgets/SceneHotspotNodeWidget.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/RDiagram.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-586">
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sass/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="42" column="37" lean-forward="true" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -546,10 +503,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="189">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Custom/Helper/jsonSkeleton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Custom/Models/SceneHotspotNodeModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="50" lean-forward="true" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Custom/Widgets/ProjectNodeWidget.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Custom/Widgets/BodyWidget.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Custom/Widgets/SceneHotspotNodeWidget.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="71" column="71" lean-forward="true" selection-start-line="71" selection-start-column="71" selection-end-line="71" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sass/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
         </state>
       </provider>
     </entry>

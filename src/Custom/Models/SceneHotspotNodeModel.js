@@ -5,7 +5,7 @@ import * as _ from "lodash";
 export class SceneHotspotNodeModel extends NodeModel {
     constructor() {
         super("ScHotspot");
-        this.hotspot_ids = {};
+        this.hotspot_ids = [];
         this.scene_id = "";
         this.next_scene_id = "";
     }
@@ -19,11 +19,17 @@ export class SceneHotspotNodeModel extends NodeModel {
         console.log("next id",this.next_scene_id);
     };
     removeHsId = (id) => {
-        this.hotspot_ids = _.omit(this.hotspot_ids,"hotspot_"+id);
+        this.hotspot_ids = _.filter(this.hotspot_ids,function(o) { return o.id !== id; });
+        console.log("hsId",this.hotspot_ids);
     };
-    updateHsId = (e,id) => {
-        console.log(e.target.value,id);
-        this.hotspot_ids["hotspot_"+id] = e.target.value;
+    updateHsId = (e,id,portId) => {
+        console.log(e.target.value,id,portId);
+        this.hotspot_ids.push({
+           id: id,
+           hotspot_id: e.target.value,
+           port_id: portId
+        });
+        console.log("hsId",this.hotspot_ids);
     };
 
     serialize() {

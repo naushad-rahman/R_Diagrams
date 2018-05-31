@@ -28,16 +28,18 @@ export class ProjectNodeWidget extends React.Component {
 
     render() {
         return (<div className="widget-div" style={{backgroundColor:"#CCC"}}>
-            <div className="widget-label">Project : </div>
-            <div>
-                <label>Name : </label>
-                <input onBlur={this.props.node.updateName} type="text"/>
+            <div className="scene">Project : </div>
+            <div className="widget-content">
+                <div>
+                    <label>Name : </label>
+                    <input onBlur={this.props.node.updateName} type="text"/>
+                </div>
+                <div>
+                    <label>Config : </label>
+                    <textarea style={{display:"none"}} onBlur={this.props.node.updateConfig} ref={this.textRef} rows="3"/>
+                </div>
+                <button onClick={this.toggleTextArea.bind(this)}>Toggle</button>
             </div>
-            <div>
-                <label>Config : </label>
-                <textarea style={{display:"none"}} onBlur={this.props.node.updateConfig} ref={this.textRef} rows="3"/>
-            </div>
-            <button onClick={this.toggleTextArea.bind(this)}>Toggle</button>
         </div>);
     }
 }

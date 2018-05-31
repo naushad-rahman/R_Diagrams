@@ -43,10 +43,10 @@ export class SceneHotspotNodeWidget extends React.Component {
     _generateHotspots = ()=> {
         return this.state.hotspot_ids.map((hotspot,index)=> (
             <div className="widget-hotspot" key={hotspot.hotspot_id}>
-                <button className="widget-hotspot-del" onClick={()=>{this._removeHotspot(hotspot,index+1)}}>-</button>
+                <button className="widget-hotspot-del" onClick={()=>{this._removeHotspot(hotspot,index)}}>-</button>
                 <div className="widget-hotspot-label">HS {hotspot.hotspot_id} : </div>
-                <input className="widget-hotspot-input" onBlur={(e)=>{this.props.node.updateHsId(e,hotspot.hotspot_id)}} defaultValue={this.props.node.hotspot_ids["hotspot_"+hotspot.hotspot_id] || ""} type="text"/>
-                <div>{this.generatePort(this.props.node.getNextPorts()[index+1])}</div>
+                <input className="widget-hotspot-input" onBlur={(e)=>{this.props.node.updateHsId(e,hotspot.hotspot_id,this.props.node.getNextPorts()[index].id)}} defaultValue={this.props.node.hotspot_ids["hotspot_"+hotspot.hotspot_id] || ""} type="text"/>
+                <div>{this.generatePort(this.props.node.getNextPorts()[index])}</div>
             </div>
         ));
     };
@@ -70,8 +70,7 @@ export class SceneHotspotNodeWidget extends React.Component {
                 </div>
                 <div className="widget-next">
                     <div className="widget-next-label">Next Id : </div>
-                    <input className="widget-next-input" onBlur={this.updateNextId} defaultValue={this.props.node.next_scene_id} type="text"/>
-                    <div>{this.generatePort(this.props.node.getNextPorts()[0])}</div>
+                    <input className="widget-next-input" onBlur={this.props.node.updateNextId} defaultValue={this.props.node.next_scene_id} type="text"/>
                 </div>
                 {this._generateHotspots()}
                 <div className="widget-add"><button onClick={this._addElement}>+</button></div>

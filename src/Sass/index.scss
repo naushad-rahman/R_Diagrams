@@ -24,6 +24,22 @@ body {
   background-size: 50px 50px;
 }
 
+.srd-node{
+  position: absolute;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  user-select: none;
+  cursor: move;
+  pointer-events: all;
+
+  &--selected{
+    > * {
+      border-color:rgb(0,192,255) !important;
+      border-width: 1rem;
+    }
+  }
+}
+
 .widget-container {
   width: 15rem;
   .srd-port{

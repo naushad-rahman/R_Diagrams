@@ -1,4 +1,5 @@
 import * as React from "react";
+import * as _ from "lodash";
 
 import { TrayItemWidget } from "./TrayItemWidget";
 import { TrayWidget } from "./TrayWidget";
@@ -13,7 +14,28 @@ import { CustomDiagramWidget } from "./CustomDiagramWidget";
 
 export class BodyWidget extends React.Component {
     showDiagramJSON = (model) => {
+        let finalJson = {};
+        finalJson.scenes = [];
         console.log("MOD",model);
+        let projectNode = _.find(model.nodes,function(o) { return o.type === "Project"; });
+        let sceneNode = _.filter(model.nodes,function(o) { return o.type === "ScHotspot"; });
+        finalJson.config = projectNode.Config;
+        for(let scene of sceneNode){
+            let scObj = {};
+            scObj.scene_id = scene.scene_id;
+            scObj.next_scene_id = scene.next_scene_id;
+            scObj.hotspots = [];
+            for(let hs of scene.hotspot_ids){
+                let findPort = _.find(scene.ports,function(o) { return o.id === hs.port_id; });
+                let findLink = findPort.links[Object.keys(findPort.links)[0]];
+                scObj.hotspots.push({
+                    hotspot_id: hs.hotspot_id || "",
+                    next_scene_id: findLink.targetPort.parent.scene_id
+                });
+            }
+            finalJson.scenes.push(scObj);
+        }
+        console.log("FIN",finalJson);
     };
 
     render() {
@@ -61,7 +83,6 @@ export class BodyWidget extends React.Component {
                                     break;
                                 case "ScHotspot":
                                     node = new SceneHotspotNodeModel();
-                                    node.addNextPort("Next");
                                     node.addOutPort("Out");
                                     node.addInPort("In");
                                     break;

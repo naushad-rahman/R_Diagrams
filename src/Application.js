@@ -5,7 +5,6 @@ import {JsonNodeFactory} from "./Custom/Factories/JsonNodeFactory";
 import {ProjectNodeFactory} from "./Custom/Factories/ProjectNodeFactory";
 import {ProjectNodeModel} from "./Custom/Models/ProjectNodeModel";
 import {SceneHotspotNodeFactory} from "./Custom/Factories/SceneHotspotNodeFactory";
-import {SceneHotspotNodeModel} from "./Custom/Models/SceneHotspotNodeModel";
 
 export class Application {
     constructor() {
@@ -23,10 +22,7 @@ export class Application {
         this.activeModel = new SRD.DiagramModel();
         this.diagramEngine.setDiagramModel(this.activeModel);
         //initial map model
-        let node1 = new SceneHotspotNodeModel();
-        node1.addNextPort("Nxt");
-        node1.addOutPort("Out");
-        node1.addInPort("In");
+        let node1 = new ProjectNodeModel();
         node1.setPosition(80,80);
         this.activeModel.addAll(node1);
     }
