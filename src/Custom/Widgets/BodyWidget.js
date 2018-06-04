@@ -4,7 +4,7 @@ import * as _ from "lodash";
 import { TrayItemWidget } from "./TrayItemWidget";
 import { TrayWidget } from "./TrayWidget";
 
-import { DefaultNodeModel } from "storm-react-diagrams";
+import { DefaultNodeModel, DiagramModel } from "storm-react-diagrams";
 import { SceneNodeModel } from "../Models/SceneNodeModel";
 import { HotspotNodeModel } from "../Models/HotspotNodeModel";
 import { JsonNodeModel } from "../Models/JsonNodeModel";
@@ -38,12 +38,19 @@ export class BodyWidget extends React.Component {
         console.log("FIN",finalJson);
     };
 
+    applyDiagram = (app) => {
+          console.log(app.getDiagramEngine().getDiagramModel());
+          let tempModel = new DiagramModel();
+          app.getDiagramEngine().setDiagramModel(tempModel);
+    };
+
     render() {
         return (
             <div className="body">
                 <div className="content">
                     <TrayWidget>
                         <button onClick={()=>{this.showDiagramJSON(this.props.app.getDiagramEngine().getDiagramModel())}}>Serialize</button>
+                        <button onClick={()=>{this.applyDiagram(this.props.app)}}>Apply</button>
                         <TrayItemWidget model={{ type: "in" }} name="In Node" color="rgb(192,255,0)" />
                         <TrayItemWidget model={{ type: "out" }} name="Out Node" color="rgb(0,192,255)" />
                         <TrayItemWidget model={{ type: "Scene" }} name="Scene Node" color="rgb(255,255,255)" />
