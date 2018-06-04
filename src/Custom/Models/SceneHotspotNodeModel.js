@@ -34,8 +34,16 @@ export class SceneHotspotNodeModel extends NodeModel {
 
     serialize() {
         return _.merge(super.serialize(), {
+            scene_id: this.scene_id,
+            next_scene_id: this.next_scene_id,
             hotspot_ids: this.hotspot_ids
         });
+    }
+    deSerialize(object, engine) {
+        super.deSerialize(object, engine);
+        this.scene_id = object.scene_id;
+        this.next_scene_id = object.next_scene_id;
+        this.hotspot_ids = object.hotspot_ids;
     }
 
     addInPort(label) {

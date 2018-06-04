@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e1d4ce1-187b-4466-b556-8e9b45a3ebf0" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Custom/Models/SceneHotspotNodeModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Custom/Models/SceneHotspotNodeModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Custom/Widgets/BodyWidget.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Custom/Widgets/BodyWidget.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,8 +20,8 @@
       <file leaf-file-name="SceneHotspotNodeWidget.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Custom/Widgets/SceneHotspotNodeWidget.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1029">
-              <caret line="62" column="88" lean-forward="true" selection-start-line="62" selection-start-column="88" selection-end-line="62" selection-end-column="88" />
+            <state relative-caret-position="630">
+              <caret line="30" column="43" lean-forward="true" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -28,10 +29,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="SceneHotspotNodeModel.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Custom/Models/SceneHotspotNodeModel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="903">
+              <caret line="45" column="46" lean-forward="true" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="BodyWidget.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Custom/Widgets/BodyWidget.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
+            <state relative-caret-position="294">
               <caret line="44" column="60" lean-forward="true" selection-start-line="44" selection-start-column="60" selection-end-line="44" selection-end-column="60" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
@@ -81,11 +91,11 @@
         <option value="$PROJECT_DIR$/src/Custom/Models/ProjectNodeModel.js" />
         <option value="$PROJECT_DIR$/src/Application.js" />
         <option value="$PROJECT_DIR$/src/Custom/Helper/jsonSkeleton.js" />
-        <option value="$PROJECT_DIR$/src/Custom/Models/SceneHotspotNodeModel.js" />
         <option value="$PROJECT_DIR$/src/Custom/Widgets/ProjectNodeWidget.js" />
         <option value="$PROJECT_DIR$/src/Sass/index.scss" />
-        <option value="$PROJECT_DIR$/src/Custom/Widgets/BodyWidget.js" />
         <option value="$PROJECT_DIR$/src/Custom/Widgets/SceneHotspotNodeWidget.js" />
+        <option value="$PROJECT_DIR$/src/Custom/Widgets/BodyWidget.js" />
+        <option value="$PROJECT_DIR$/src/Custom/Models/SceneHotspotNodeModel.js" />
       </list>
     </option>
   </component>
@@ -105,7 +115,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="y" value="27" />
     <option name="width" value="1366" />
     <option name="height" value="741" />
@@ -204,15 +214,15 @@
       <workItem from="1528094920186" duration="3742000" />
       <workItem from="1528105104909" duration="390000" />
       <workItem from="1528105590674" duration="37000" />
-      <workItem from="1528105684359" duration="10203000" />
+      <workItem from="1528105684359" duration="14011000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92178000" />
+    <option name="totallyTimeSpent" value="95986000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1366" height="741" extended-state="6" />
+    <frame x="0" y="27" width="1366" height="741" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20790629" />
@@ -512,13 +522,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Custom/Helper/jsonSkeleton.js" />
-    <entry file="file://$PROJECT_DIR$/src/Custom/Models/SceneHotspotNodeModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="50" lean-forward="true" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Custom/Widgets/ProjectNodeWidget.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -568,10 +571,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Custom/Models/SceneHotspotNodeModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="903">
+          <caret line="45" column="46" lean-forward="true" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Custom/Widgets/SceneHotspotNodeWidget.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1029">
-          <caret line="62" column="88" lean-forward="true" selection-start-line="62" selection-start-column="88" selection-end-line="62" selection-end-column="88" />
+        <state relative-caret-position="630">
+          <caret line="30" column="43" lean-forward="true" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
@@ -580,7 +590,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Custom/Widgets/BodyWidget.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
+        <state relative-caret-position="294">
           <caret line="44" column="60" lean-forward="true" selection-start-line="44" selection-start-column="60" selection-end-line="44" selection-end-column="60" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />

@@ -46,10 +46,10 @@ export class BodyWidget extends React.Component {
     };
 
     applyDiagram = (engine) => {
-        console.log("apply",JSON.parse(strModel));
         let tempModel = new DiagramModel();
         tempModel.deSerializeDiagram(JSON.parse(strModel), engine);
         engine.setDiagramModel(tempModel);
+        console.log("apply",tempModel);
         this.forceUpdate();
     };
 
