@@ -12,6 +12,8 @@ import { SceneHotspotNodeModel } from "../Models/SceneHotspotNodeModel";
 
 import { CustomDiagramWidget } from "./CustomDiagramWidget";
 
+let strModel = "";
+
 export class BodyWidget extends React.Component {
     showDiagramJSON = (model) => {
         let finalJson = {};
@@ -38,10 +40,17 @@ export class BodyWidget extends React.Component {
         console.log("FIN",finalJson);
     };
 
-    applyDiagram = (app) => {
-          console.log(app.getDiagramEngine().getDiagramModel());
-          let tempModel = new DiagramModel();
-          app.getDiagramEngine().setDiagramModel(tempModel);
+    addDiagram = (model) => {
+        console.log("add",model);
+        strModel = JSON.stringify(model.serializeDiagram());
+    };
+
+    applyDiagram = (engine) => {
+        console.log("apply",JSON.parse(strModel));
+        let tempModel = new DiagramModel();
+        tempModel.deSerializeDiagram(JSON.parse(strModel), engine);
+        engine.setDiagramModel(tempModel);
+        this.forceUpdate();
     };
 
     render() {
@@ -50,7 +59,8 @@ export class BodyWidget extends React.Component {
                 <div className="content">
                     <TrayWidget>
                         <button onClick={()=>{this.showDiagramJSON(this.props.app.getDiagramEngine().getDiagramModel())}}>Serialize</button>
-                        <button onClick={()=>{this.applyDiagram(this.props.app)}}>Apply</button>
+                        <button onClick={()=>{this.addDiagram(this.props.app.getDiagramEngine().getDiagramModel())}}>Add</button>
+                        <button onClick={()=>{this.applyDiagram(this.props.app.getDiagramEngine())}}>Apply</button>
                         <TrayItemWidget model={{ type: "in" }} name="In Node" color="rgb(192,255,0)" />
                         <TrayItemWidget model={{ type: "out" }} name="Out Node" color="rgb(0,192,255)" />
                         <TrayItemWidget model={{ type: "Scene" }} name="Scene Node" color="rgb(255,255,255)" />
