@@ -47,35 +47,28 @@ body {
   width: 10rem;
   padding-top: 2px;
   padding-bottom: 2px;
-  height: 1.5rem;
-  background: linear-gradient(#bbb,#999);
+  height: 1.4rem;
+  background: linear-gradient(#bbb,#777);
   .srd-port{
-    width: 14px;
-    height: 14px;
     border: 2px solid black;
     background-color: rgba(200,100,100,1);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
   }
   .left-port{
     float: left;
     width: 15%;
-    .srd-port{
-      border-top-right-radius: 1rem;
-      border-bottom-right-radius: 1rem;
-    }
   }
   .scene{
     float: left;
-    width: 68%;
+    width: 70%;
     text-align: center;
+    overflow: hidden;
     text-overflow: ellipsis;
   }
   .right-port{
     float: left;
-    width: 17%;
-    .srd-port{
-      border-top-left-radius: 1rem;
-      border-bottom-left-radius: 1rem;
-    }
+    width: 15%;
   }
 }
 
