@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e1d4ce1-187b-4466-b556-8e9b45a3ebf0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Custom/Factories/NextPortFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Custom/Factories/NextPortFactory.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Custom/Models/Scene2NodeModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Custom/Models/Scene2NodeModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Custom/Widgets/BodyWidget.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Custom/Widgets/BodyWidget.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Custom/Widgets/Scene2NodeWidget.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Custom/Widgets/Scene2NodeWidget.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Custom/Widgets/SceneHotspotNodeWidget.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Custom/Widgets/SceneHotspotNodeWidget.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sass/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sass/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sass/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sass/index.scss" afterDir="false" />
     </list>
@@ -27,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Scene2NodeWidget.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Scene2NodeWidget.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Custom/Widgets/Scene2NodeWidget.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+            <state relative-caret-position="336">
+              <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -42,8 +37,8 @@
       <file leaf-file-name="Scene2NodeModel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Custom/Models/Scene2NodeModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            <state relative-caret-position="359">
+              <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
               <folding>
                 <element signature="e#0#76#0" expanded="true" />
               </folding>
@@ -51,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Sass/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="140">
+              <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -99,8 +94,8 @@
         <option value="$PROJECT_DIR$/src/Custom/Widgets/NextPortLabelWidget.js" />
         <option value="$PROJECT_DIR$/src/Custom/Factories/NextPortFactory.js" />
         <option value="$PROJECT_DIR$/src/Custom/Widgets/BodyWidget.js" />
-        <option value="$PROJECT_DIR$/src/Custom/Models/Scene2NodeModel.js" />
         <option value="$PROJECT_DIR$/src/Custom/Widgets/Scene2NodeWidget.js" />
+        <option value="$PROJECT_DIR$/src/Custom/Models/Scene2NodeModel.js" />
         <option value="$PROJECT_DIR$/src/Sass/index.scss" />
       </list>
     </option>
@@ -121,7 +116,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="27" />
     <option name="width" value="1366" />
     <option name="height" value="741" />
@@ -150,6 +145,13 @@
               <item name="rdiagrams" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Custom" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rdiagrams" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rdiagrams" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Custom" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -194,12 +196,12 @@
       <workItem from="1528105104909" duration="390000" />
       <workItem from="1528105590674" duration="37000" />
       <workItem from="1528105684359" duration="14610000" />
-      <workItem from="1528183499516" duration="19290000" />
+      <workItem from="1528183499516" duration="21418000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115875000" />
+    <option name="totallyTimeSpent" value="118003000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -573,16 +575,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Custom/Models/SceneHotspotNodeModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="55" column="75" lean-forward="true" selection-start-line="55" selection-start-column="75" selection-end-line="55" selection-end-column="75" />
-          <folding>
-            <element signature="e#0#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Custom/Widgets/CustomDiagramWidget.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -650,30 +642,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Custom/Models/Scene2NodeModel.js">
+    <entry file="file://$PROJECT_DIR$/src/Custom/Models/SceneHotspotNodeModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        <state relative-caret-position="342">
+          <caret line="45" column="46" lean-forward="true" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
           <folding>
             <element signature="e#0#76#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sass/index.scss">
+    <entry file="file://$PROJECT_DIR$/src/Custom/Models/Scene2NodeModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="359">
+          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#76#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Custom/Widgets/Scene2NodeWidget.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+        <state relative-caret-position="336">
+          <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sass/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
         </state>
       </provider>
     </entry>

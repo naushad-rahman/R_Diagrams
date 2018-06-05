@@ -11,7 +11,16 @@ export class Scene2NodeWidget extends React.Component {
     constructor(props) {
         super(props);
         console.log(props);
+        this.headerRef =  React.createRef();
     }
+
+    _clickHeader = () => {
+        this.headerRef.current.contentEditable = true;
+    };
+    _blurHeader = (e) => {
+        this.headerRef.current.contentEditable = false;
+        this.props.node.updateName(e);
+    };
 
     generatePort(port) {
         return <SRD.DefaultPortLabel model={port} key={port.id}/>;
@@ -23,7 +32,9 @@ export class Scene2NodeWidget extends React.Component {
                 <div className="left-port">
                     {_.map(this.props.node.getInPorts(), this.generatePort.bind(this))}
                 </div>
-                <div className="scene">Scene</div>
+                <div onClick={()=>{this._clickHeader()}} onBlur={(e)=>{this._blurHeader(e)}} ref={this.headerRef} contentEditable={false} className="scene">
+                    Scene
+                </div>
                 <div className="right-port">
                     {_.map(this.props.node.getOutPorts(), this.generatePort.bind(this))}
                 </div>
