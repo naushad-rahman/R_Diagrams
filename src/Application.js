@@ -5,6 +5,7 @@ import {JsonNodeFactory} from "./Custom/Factories/JsonNodeFactory";
 import {ProjectNodeFactory} from "./Custom/Factories/ProjectNodeFactory";
 import {ProjectNodeModel} from "./Custom/Models/ProjectNodeModel";
 import {SceneHotspotNodeFactory} from "./Custom/Factories/SceneHotspotNodeFactory";
+import {Scene2NodeFactory} from "./Custom/Factories/Scene2NodeFactory";
 
 export class Application {
     constructor() {
@@ -15,6 +16,7 @@ export class Application {
         this.diagramEngine.registerNodeFactory(new JsonNodeFactory());
         this.diagramEngine.registerNodeFactory(new ProjectNodeFactory());
         this.diagramEngine.registerNodeFactory(new SceneHotspotNodeFactory());
+        this.diagramEngine.registerNodeFactory(new Scene2NodeFactory());
 
         this.newModel();
     }
