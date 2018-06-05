@@ -6,11 +6,13 @@ import {ProjectNodeFactory} from "./Custom/Factories/ProjectNodeFactory";
 import {ProjectNodeModel} from "./Custom/Models/ProjectNodeModel";
 import {SceneHotspotNodeFactory} from "./Custom/Factories/SceneHotspotNodeFactory";
 import {Scene2NodeFactory} from "./Custom/Factories/Scene2NodeFactory";
+import {NextPortFactory} from "./Custom/Factories/NextPortFactory";
 
 export class Application {
     constructor() {
         this.diagramEngine = new SRD.DiagramEngine();
         this.diagramEngine.installDefaultFactories();
+        this.diagramEngine.registerPortFactory(new NextPortFactory());
         this.diagramEngine.registerNodeFactory(new SceneNodeFactory());
         this.diagramEngine.registerNodeFactory(new HotspotNodeFactory());
         this.diagramEngine.registerNodeFactory(new JsonNodeFactory());

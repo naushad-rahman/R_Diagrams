@@ -107,6 +107,8 @@ export class BodyWidget extends React.Component {
                                     break;
                                 case "Scene2":
                                     node = new Scene2NodeModel();
+                                    node.addOutPort("O");
+                                    node.addInPort("I");
                                     break;
                                 default :
                                     console.log("Error in Switch");

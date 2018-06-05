@@ -43,6 +43,18 @@ body {
   }
 }
 
+.Scene2{
+  .left-port{
+
+  }
+  .scene{
+
+  }
+  .right-port{
+
+  }
+}
+
 .widget-container {
   width: 15rem;
   .srd-port{
@@ -129,6 +141,7 @@ body {
       .srd-port{
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
+        float: left;
       }
       .widget-hotspot-del{
         float: left;

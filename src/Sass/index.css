@@ -103,7 +103,8 @@ body {
     padding-bottom: 2px; }
     .widget-container .widget-content .widget-hotspot .srd-port {
       border-top-left-radius: 5px;
-      border-bottom-left-radius: 5px; }
+      border-bottom-left-radius: 5px;
+      float: left; }
     .widget-container .widget-content .widget-hotspot .widget-hotspot-del {
       float: left;
       margin-left: 1%; }

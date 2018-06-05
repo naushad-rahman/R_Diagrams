@@ -2,6 +2,7 @@ import * as SRD from "storm-react-diagrams";
 import * as React from "react";
 import * as _ from "lodash";
 import PropTypes from 'prop-types';
+import {NextPortLabel} from "./NextPortLabelWidget";
 
 export class SceneHotspotNodeWidget extends React.Component {
     static propTypes = {
@@ -19,6 +20,9 @@ export class SceneHotspotNodeWidget extends React.Component {
     generatePort(port) {
         return <SRD.DefaultPortLabel model={port} key={port.id}/>;
     }
+    generateNextPort = (port) => {
+        return <NextPortLabel model={port} key={port.id}/>;
+    };
 
     _addElement = () => {
         let newH = Object.assign([], this.state.hotspot_ids);
@@ -46,7 +50,7 @@ export class SceneHotspotNodeWidget extends React.Component {
                 <button className="widget-hotspot-del" onClick={()=>{this._removeHotspot(hotspot,index)}}>-</button>
                 <div className="widget-hotspot-label">HS {hotspot.hotspot_id} : </div>
                 <input className="widget-hotspot-input" onBlur={(e)=>{this.props.node.updateHsId(e,hotspot.hotspot_id,this.props.node.getNextPorts()[index].id)}} defaultValue={this.props.node.hotspot_ids["hotspot_"+hotspot.hotspot_id] || ""} type="text"/>
-                <div>{this.generatePort(this.props.node.getNextPorts()[index])}</div>
+                <div>{this.generateNextPort(this.props.node.getNextPorts()[index])}</div>
             </div>
         ));
     };
