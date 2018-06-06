@@ -10,16 +10,19 @@
       position: relative;
       flex-grow: 1; }
     .body .content .tray {
-      min-width: 200px;
-      background: #141414;
+      min-width: 100px;
       flex-grow: 0;
-      flex-shrink: 0; }
+      flex-shrink: 0;
+      background: -webkit-linear-gradient(63deg, #151515 5px, transparent 5px) 0 5px, -webkit-linear-gradient(243deg, #151515 5px, transparent 5px) 10px 0px, -webkit-linear-gradient(63deg, #222 5px, transparent 5px) 0px 10px, -webkit-linear-gradient(243deg, #222 5px, transparent 5px) 10px 5px, -webkit-linear-gradient(0deg, #1b1b1b 10px, transparent 10px), -webkit-linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+      background-size: 20px 20px;
+      background-color: #131313;
+      border-right: black 3px solid; }
       .body .content .tray .tray-item {
         color: white;
-        font-family: Helvetica, Arial;
+        text-align: center;
+        font-weight: bold;
         padding: 5px;
-        margin: 0px 10px;
-        border: solid 1px;
+        margin: 10px;
+        border: solid 2px;
         border-radius: 5px;
-        margin-bottom: 2px;
         cursor: pointer; }

@@ -32,7 +32,7 @@ export class Scene2NodeWidget extends React.Component {
                 <div className="left-port">
                     {_.map(this.props.node.getInPorts(), this.generatePort.bind(this))}
                 </div>
-                <div onClick={()=>{this._clickHeader()}} onBlur={(e)=>{this._blurHeader(e)}} ref={this.headerRef} contentEditable={false} className="scene">
+                <div onDoubleClick={()=>{this._clickHeader()}} onBlur={(e)=>{this._blurHeader(e)}} ref={this.headerRef} contentEditable={false} className="scene">
                     Scene
                 </div>
                 <div className="right-port">

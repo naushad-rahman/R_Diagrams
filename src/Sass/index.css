@@ -9,11 +9,10 @@ body {
   font-family: "Lato", sans-serif, sans-serif; }
 
 .srd-demo-canvas {
-  height: 100%;
   min-height: 100vh;
-  background-color: #3c3c3c !important;
-  background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05) 76%, transparent 77%, transparent);
-  background-size: 50px 50px; }
+  background-color: #555;
+  background-size: 80px 40px;
+  background-image: linear-gradient(to right, #888 1px, transparent 1px), linear-gradient(to bottom, #888 1px, transparent 1px); }
 
 .srd-node {
   position: absolute;
@@ -28,22 +27,43 @@ body {
   border-radius: 0.3rem;
   min-width: 3rem; }
   .srd-node--selected {
-    border: 0.2rem solid #00c0ff; }
+    border: 0.2rem solid red; }
   .srd-node > .srd-default-node {
     border-width: 0;
     border-radius: 0; }
+
+.Project {
+  width: 12rem;
+  padding: 3px;
+  background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%); }
+  .Project .project-header {
+    text-align: center;
+    font-size: 1.2rem; }
+  .Project .project-name {
+    height: 20px;
+    padding: 3px; }
+    .Project .project-name label {
+      float: left;
+      width: 30%; }
+    .Project .project-name input {
+      float: left;
+      width: 70%; }
+  .Project .project-config textarea {
+    width: 100%;
+    height: 5rem;
+    margin-top: 3px; }
 
 .Scene2 {
   width: 10rem;
   padding-top: 2px;
   padding-bottom: 2px;
   height: 1.4rem;
-  background: linear-gradient(#bbb, #777); }
+  background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%); }
   .Scene2 .srd-port {
     border: 2px solid black;
-    background-color: #c86464;
     border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem; }
+    border-bottom-right-radius: 1rem;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); }
   .Scene2 .left-port {
     float: left;
     width: 15%; }
@@ -56,97 +76,3 @@ body {
   .Scene2 .right-port {
     float: left;
     width: 15%; }
-
-.widget-container {
-  width: 15rem; }
-  .widget-container .srd-port {
-    width: 12px;
-    height: 12px;
-    background-color: #c8c8c8; }
-  .widget-container .widget-header {
-    width: 100%;
-    height: 24px;
-    padding-top: 2px;
-    padding-bottom: 2px; }
-    .widget-container .widget-header .left-port {
-      float: left;
-      width: 20%; }
-      .widget-container .widget-header .left-port .srd-port {
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px; }
-    .widget-container .widget-header .scene {
-      float: left;
-      text-align: center;
-      width: 60%; }
-    .widget-container .widget-header .right-port {
-      float: right;
-      width: 20%; }
-      .widget-container .widget-header .right-port .srd-port {
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px; }
-  .widget-container .widget-content .widget-id {
-    width: 100%;
-    height: 24px;
-    padding-top: 2px;
-    padding-bottom: 2px; }
-    .widget-container .widget-content .widget-id .widget-id-label {
-      margin-left: 10%;
-      margin-right: 2%;
-      min-width: 28%;
-      max-width: 28%;
-      float: left;
-      text-align: right; }
-    .widget-container .widget-content .widget-id .widget-id-input {
-      margin-right: 20%;
-      min-width: 40%;
-      max-width: 40%;
-      float: left; }
-  .widget-container .widget-content .widget-next {
-    width: 100%;
-    height: 24px;
-    padding-top: 2px;
-    padding-bottom: 2px; }
-    .widget-container .widget-content .widget-next .srd-port {
-      border-top-left-radius: 5px;
-      border-bottom-left-radius: 5px; }
-    .widget-container .widget-content .widget-next .widget-next-label {
-      margin-left: 10%;
-      margin-right: 2%;
-      min-width: 28%;
-      max-width: 28%;
-      float: left;
-      text-align: right; }
-    .widget-container .widget-content .widget-next .widget-next-input {
-      min-width: 40%;
-      max-width: 40%;
-      float: left; }
-  .widget-container .widget-content .widget-hotspot {
-    width: 100%;
-    height: 24px;
-    padding-top: 2px;
-    padding-bottom: 2px; }
-    .widget-container .widget-content .widget-hotspot .srd-port {
-      border-top-left-radius: 5px;
-      border-bottom-left-radius: 5px;
-      float: left; }
-    .widget-container .widget-content .widget-hotspot .widget-hotspot-del {
-      float: left;
-      margin-left: 1%; }
-    .widget-container .widget-content .widget-hotspot .widget-hotspot-label {
-      margin-right: 2%;
-      min-width: 28%;
-      max-width: 28%;
-      float: left;
-      text-align: right; }
-    .widget-container .widget-content .widget-hotspot .widget-hotspot-input {
-      min-width: 41%;
-      max-width: 41%;
-      float: left; }
-  .widget-container .widget-content .widget-add {
-    display: block;
-    margin: 0 auto;
-    width: 10%;
-    padding-top: 4px;
-    padding-bottom: 4px; }
-    .widget-container .widget-content .widget-add button {
-      text-align: center; }
