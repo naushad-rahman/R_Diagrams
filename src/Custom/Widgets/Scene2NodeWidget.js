@@ -19,7 +19,7 @@ export class Scene2NodeWidget extends React.Component {
     };
     _blurHeader = (e) => {
         this.headerRef.current.contentEditable = false;
-        this.props.node.updateName(e);
+        this.props.node.updateName(e.target.innerHTML);
     };
 
     generatePort(port) {
@@ -32,8 +32,8 @@ export class Scene2NodeWidget extends React.Component {
                 <div className="left-port">
                     {_.map(this.props.node.getInPorts(), this.generatePort.bind(this))}
                 </div>
-                <div onDoubleClick={()=>{this._clickHeader()}} onBlur={(e)=>{this._blurHeader(e)}} ref={this.headerRef} contentEditable={false} className="scene">
-                    Scene
+                <div onDoubleClick={this._clickHeader} onBlur={this._blurHeader} ref={this.headerRef} contentEditable={false} className="scene">
+                    {this.props.node.name}
                 </div>
                 <div className="right-port">
                     {_.map(this.props.node.getOutPorts(), this.generatePort.bind(this))}

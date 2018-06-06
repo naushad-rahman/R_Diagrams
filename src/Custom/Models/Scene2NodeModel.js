@@ -4,7 +4,7 @@ import * as _ from "lodash";
 export class Scene2NodeModel extends NodeModel {
     constructor() {
         super("Scene2");
-        this.name = "";
+        this.name = "Scene";
     }
     addInPort(label) {
         return this.addPort(new DefaultPortModel(true, Toolkit.UID(), label));
@@ -13,8 +13,8 @@ export class Scene2NodeModel extends NodeModel {
         return this.addPort(new DefaultPortModel(false, Toolkit.UID(), label));
     }
 
-    updateName = (e) => {
-         this.name = e.target.innerHTML;
+    updateName = (name) => {
+         this.name = name;
          console.log(this.name);
     };
 

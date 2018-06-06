@@ -5,7 +5,7 @@ export class ProjectNodeModel extends NodeModel {
     constructor() {
         super("Project");
         this.name = "";
-        this.Config = "";
+        this.config = "";
     }
 
     updateName = (e) => {
@@ -13,16 +13,19 @@ export class ProjectNodeModel extends NodeModel {
     };
 
     updateConfig = (e) => {
-        let jObj = JSON.parse(e.target.value);
-        this.Config = jObj;
-        console.log(this.Config);
+        this.config = e.target.value;
     };
 
     serialize() {
         return _.merge(super.serialize(), {
-            name: this.name,
-            config: this.Config
+            project_name: this.name,
+            config: this.config
         });
+    }
+    deSerialize(object, engine) {
+        super.deSerialize(object, engine);
+        this.name = object.project_name;
+        this.config = object.config;
     }
 
     addInPort(label) {
