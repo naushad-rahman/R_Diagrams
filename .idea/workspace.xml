@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e1d4ce1-187b-4466-b556-8e9b45a3ebf0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Custom/Widgets/BodyWidget.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Custom/Widgets/BodyWidget.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -44,15 +43,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BodyWidget.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BodyWidget.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Custom/Widgets/BodyWidget.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="-168">
               <caret line="10" column="75" lean-forward="true" selection-start-line="10" selection-start-column="75" selection-end-line="10" selection-end-column="75" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
                 <element signature="e#492#552#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="252">
+                <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -101,6 +112,7 @@
         <option value="$PROJECT_DIR$/src/Custom/Widgets/ProjectNodeWidget.js" />
         <option value="$PROJECT_DIR$/src/Custom/Models/ProjectNodeModel.js" />
         <option value="$PROJECT_DIR$/src/Custom/Widgets/BodyWidget.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -150,20 +162,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Custom" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="rdiagrams" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rdiagrams" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Custom" type="462c0819:PsiDirectoryNode" />
-              <item name="Models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rdiagrams" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rdiagrams" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Custom" type="462c0819:PsiDirectoryNode" />
-              <item name="Widgets" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -211,12 +209,12 @@
       <workItem from="1528267244089" duration="1133000" />
       <workItem from="1528269082203" duration="20545000" />
       <workItem from="1528359603121" duration="8825000" />
-      <workItem from="1528447389807" duration="559000" />
+      <workItem from="1528447389807" duration="1410000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151276000" />
+    <option name="totallyTimeSpent" value="152127000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -274,16 +272,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Custom/Models/ProjectNodeModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Custom/Widgets/BodyWidget.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
@@ -631,12 +619,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Custom/Widgets/BodyWidget.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="-168">
           <caret line="10" column="75" lean-forward="true" selection-start-line="10" selection-start-column="75" selection-end-line="10" selection-end-column="75" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
             <element signature="e#492#552#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="252">
+            <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
