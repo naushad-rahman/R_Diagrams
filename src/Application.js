@@ -12,12 +12,7 @@ export class Application {
     constructor() {
         this.diagramEngine = new SRD.DiagramEngine();
         this.diagramEngine.installDefaultFactories();
-        this.diagramEngine.registerPortFactory(new NextPortFactory());
-        this.diagramEngine.registerNodeFactory(new SceneNodeFactory());
-        this.diagramEngine.registerNodeFactory(new HotspotNodeFactory());
-        this.diagramEngine.registerNodeFactory(new JsonNodeFactory());
         this.diagramEngine.registerNodeFactory(new ProjectNodeFactory());
-        this.diagramEngine.registerNodeFactory(new SceneHotspotNodeFactory());
         this.diagramEngine.registerNodeFactory(new Scene2NodeFactory());
 
         this.newModel();
